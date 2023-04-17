@@ -1,7 +1,7 @@
 //your code here
 const bandname=['The Beatles', 'Aerosmith', 'The Rolling Stones', 'Anthrax', 'The Who'];
 function strip(bandname){
-	return bandname.replace(^(a |the |an )/i, '').trim();
+	return bandname.replace(/^(a |the |an )/i, '').trim();
 	
 }
 const sortedband=bandnames.sort((a,b)=>strip(a)>strip(b)?1:-1);
