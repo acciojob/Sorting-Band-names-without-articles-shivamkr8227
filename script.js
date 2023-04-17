@@ -4,7 +4,7 @@ function strip(bandname){
 	return bandname.replace(/^(a |the |an )/i, '').trim();
 	
 }
-const sortedband=bandnames.sort((a,b)=>strip(a)>strip(b)?1:-1);
+const sortedband=bandname.sort((a,b)=>strip(a)>strip(b)?1:-1);
 const bandlist=document.querySelector('#bands');
 for(let i=0; i<sortedband.length ; i++)
 	{
